@@ -1,10 +1,11 @@
+@Login
 Feature: Probar API de Login de la página Reqres.In
 
   Background:
     * url 'https://reqres.in'
     * header X-Api-Key = 'reqres-free-v1'
 
-
+  @LoginHP
   Scenario: Validar función de Login por API
 
     Given path 'api','login'
@@ -13,6 +14,7 @@ Feature: Probar API de Login de la página Reqres.In
     Then status 200
     And match response == { token: '#string' , token2: '#notpresent' }
 
+  @LoginFA
   Scenario: Login Fallido
 
     Given path 'api','login'

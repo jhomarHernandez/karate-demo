@@ -1,10 +1,11 @@
+@Users
 Feature: Probar API de Usuarios de la página Reqres.In
 
   Background:
     * url 'https://reqres.in'
     * header X-Api-Key = 'reqres-free-v1'
 
-
+    @GetUser
     Scenario: Obtener todos los usuarios y validar el primero por id
 
       Given path 'api','users'
@@ -22,6 +23,7 @@ Feature: Probar API de Usuarios de la página Reqres.In
       And match primero.first_name == 'Michael'
       And match primero contains { id: '#notnull' , avatar: '#string' }
 
+    @ModifyUser
     Scenario: Modificar usuario por id=2
 
       Given path 'api', 'users', '2'
@@ -36,6 +38,7 @@ Feature: Probar API de Usuarios de la página Reqres.In
       Then status 200
       And match response contains { "updatedAt" : '#present' }
 
+    @DeleteUser
     Scenario: Eliminar usuario
 
       Given path 'api', 'users', '2'

@@ -1,3 +1,4 @@
+@GetResources
 Feature: Probar API de Obtener recurso de la página Reqres.In
 
   Background:
