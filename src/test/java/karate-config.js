@@ -14,5 +14,11 @@ function fn() {
   } else if (env == 'e2e') {
     // customize
   }
+
+  config.generateDataByTime = function(){
+    var timestamp = new Date().getTime();
+    return 'jhomar_' + timestamp + '@example.com';
+  };
+
   return config;
 }
