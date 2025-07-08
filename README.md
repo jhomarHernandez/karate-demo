@@ -17,8 +17,9 @@
 
 ## Ejecución
 
-* Para ejecutar todos los casos de prueba, clone el proyecto en su equipo y por medio la consola una vez ubicado en el proyecto ejecute:
+* Para ejecutar todos los casos de prueba, clone el proyecto en su equipo y por medio la consola una vez ubicado dentro del proyecto ejecute:
 
+`cd karate-demo/`
 `mvn clean test`
 
 o si desea una ejecución personalizada:
