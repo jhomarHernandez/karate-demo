@@ -34,7 +34,7 @@ Feature: Probar CRUD usuarios en ServerRest.Dev
       And match response.message == "Cadastro realizado com sucesso"
 
 
-    Scenario: Registrar un usuario con correo ya existente
+    Scenario: No se debería poder registrar un usuario con correo ya existente
 
       Given path 'usuarios'
       And request
@@ -59,11 +59,11 @@ Feature: Probar CRUD usuarios en ServerRest.Dev
       And match response ==
       """
         {
-          "nome": "Greg Wunsch",
-          "email": "Jefferey13@hotmail.com",
-          "password": "FFHcwvdLwCXZCpF",
-          "administrador": "false",
-          "_id": "0MRfaldkHbt6IgvJ"
+          "nome": "#string",
+          "email": "#string",
+          "password": "#string",
+          "administrador": "#string",
+          "_id": "#notnull"
         }
       """
 

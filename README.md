@@ -2,17 +2,18 @@
 
 ## Objetivo
 
-* Demostrar conocimiento de uso de la herramienta Karate DSL.
+* Demostrar conocimiento de uso de la herramienta Karate DSL consultando a la api de https://serverest.dev/.
 
 ## Estructura
 
-* Las clases runner pueden ser ubicadas en /src/test/java/examples/[nombre de funcionalidad a probar]/ ej: (get_resource, login, users)
+* Las clase runner puede ser ubicada en /src/test/java/serverrest/users/UsersRunner.class
 
-|              | Propósito                                                          | Nombre de Clase                 |
-|--------------|--------------------------------------------------------------------|---------------------------------|
-| Get Resource | Validación de campos en arrays `match each resources contains deep`| GetResourceReqresInRunner.class |
-| Login        | Manejo de variables y casos negativos (flujos alternos)            | LoginInReqresIn.class           |
-| Users        | Uso de POST, GET, PUT, DELETE                                      | UsersRunner.class               |
+* Casos de prueba:
+  * Obtener lista de todos los usuarios
+  * Registrar un nuevo usuario con datos válidos
+  * No se debería poder registrar un usuario con correo ya existente
+  * Buscar un registro específico por ID
+  * Se puede actualizar la información de un usuario existente.
 
 ## Ejecución
 
@@ -31,10 +32,6 @@ Nota: @Login puede ser reemplazado por alguna de las etiquetas internas (ej: @Us
 * El reporte que se debería poder generar en `target/karate-reports/` serían:
 
 Summary:
-![summary_report.PNG](src/test/resources/summary_report.png)
-Get Resources:
-![get_resources.PNG](src/test/resources/get_resources.png)
-Login:
-![login.PNG](src/test/resources/Login.png)
-Users:
-![users.PNG](src/test/resources/users.png)
+![summary_serverrest.PNG](src/test/resources/summary_serverrest.png)
+![summary_serverrest_elements.PNG](src/test/resources/summary_serverrest_elements.png)
+
