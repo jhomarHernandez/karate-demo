@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="3.857" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\portafolio\karate-demo\target\test-classes;D:\portafolio\karate-demo\target\classes;C:\Users\jhoma\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\jhoma\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\jhoma\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\jhoma\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\jhoma\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\jhoma\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\jhoma\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\jhoma\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\jhoma\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\jhoma\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\jhoma\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\jhoma\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\jhoma\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\jhoma\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\jhoma\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\jhoma\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\jhoma\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\jhoma\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\jhoma\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\jhoma\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\jhoma\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\jhoma\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\jhoma\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\jhoma\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\jhoma\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\jhoma\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\jhoma\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\jhoma\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\jhoma\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\jhoma\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\jhoma\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\jhoma\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\jhoma\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\jhoma\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\jhoma\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\jhoma\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jhoma\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\jhoma\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jhoma\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\jhoma\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\jhoma\AppData\Local\Temp\surefire486741956969034057\surefirebooter-20250708114441488_3.jar C:\Users\jhoma\AppData\Local\Temp\surefire486741956969034057 2025-07-08T11-44-41_333-jvmRun1 surefire-20250708114441488_1tmp surefire_0-20250708114441488_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\portafolio\karate-demo\target\test-classes;D:\portafolio\karate-demo\target\classes;C:\Users\jhoma\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\jhoma\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\jhoma\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\jhoma\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\jhoma\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\jhoma\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\jhoma\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\jhoma\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\jhoma\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\jhoma\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\jhoma\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\jhoma\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\jhoma\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\jhoma\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\jhoma\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\jhoma\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\jhoma\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\jhoma\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\jhoma\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\jhoma\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\jhoma\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\jhoma\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\jhoma\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\jhoma\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\jhoma\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\jhoma\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\jhoma\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\jhoma\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\jhoma\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\jhoma\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\jhoma\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\jhoma\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\jhoma\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\jhoma\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\jhoma\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\jhoma\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\jhoma\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\jhoma\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\jhoma\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jhoma\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\jhoma\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jhoma\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\jhoma\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jhoma"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.4.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\portafolio\karate-demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\jhoma\AppData\Local\Temp\surefire486741956969034057\surefirebooter-20250708114441488_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="user.name" value="jhoma"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\jhoma\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jhoma\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="user.dir" value="D:\portafolio\karate-demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\libnvvp;;;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\jhoma\AppData\Local\Microsoft\WindowsApps;C:\Users\jhoma\AppData\Local\Programs\Azure Data Studio\bin;C:\apache-jmeter-5.6.3\bin;C:\Program Files\Java\jdk-17.0.4.1\bin;C:\apache-maven-3.8.6\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\jhoma\.dotnet\tools;C:\Users\jhoma\AppData\Local\Programs\Microsoft VS Code\bin;C:\Gradle\gradle-8.0.2\bin;C:\Users\jhoma\AppData\Roaming\npm;;C:\Users\jhoma\AppData\Local\Programs\Ollama;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.4.1+1-LTS-2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="3.837">
+    <system-out><![CDATA[11:44:42.893 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:44:42.901 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+11:44:43.977 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:44:43.977 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:44:43.978 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:44:43.978 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:44:43.978 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:44:44.412 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > X-Api-Key: reqres-free-v1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:44:44.412 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > X-Api-Key: reqres-free-v1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:44:44.412 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unknown
+1 > X-Api-Key: reqres-free-v1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:44:44.412 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/login
+1 > X-Api-Key: reqres-free-v1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"peter@klaven"}
+
+11:44:44.412 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/login
+1 > X-Api-Key: reqres-free-v1
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"eve.holt@reqres.in","password":"cityslicka"}
+
+11:44:44.955 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < Date: Tue, 08 Jul 2025 16:44:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1751986883&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4LZNjmkhD11RGLWd6IfVpSM3SWTVGUzz9sQgaqsCoJA%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751986883&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4LZNjmkhD11RGLWd6IfVpSM3SWTVGUzz9sQgaqsCoJA%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Access-Control-Allow-Origin: *
+1 < X-Request-Id: 1afd027b-8a9e-44a0-b0e3-af0470835092
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Ratelimit-Policy: 100;w=60
+1 < Ratelimit-Limit: 100
+1 < Ratelimit-Remaining: 98
+1 < Ratelimit-Reset: 60
+1 < Etag: W/"2fb-zJ/iiAzm4zf7SruyfEtNo0xEDoY"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 6200
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 95c10c44da4ba4d9-MIA
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=85649&min_rtt=80131&rtt_var=32207&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3106&recv_bytes=786&delivery_rate=35670&cwnd=252&unsent_bytes=0&cid=8fe196b9236cb729&ts=239&x=0"
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+11:44:44.955 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < Date: Tue, 08 Jul 2025 16:44:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1751975690&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=8HZT95QkLIEfhAPfemBWx8DQkLUIDg3aXsotyo%2FUXhU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751975690&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=8HZT95QkLIEfhAPfemBWx8DQkLUIDg3aXsotyo%2FUXhU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Access-Control-Allow-Origin: *
+1 < X-Request-Id: 1aa85e4c-7c2a-4816-ab81-d30f0454e794
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Ratelimit-Policy: 100;w=60
+1 < Ratelimit-Limit: 100
+1 < Ratelimit-Remaining: 98
+1 < Ratelimit-Reset: 60
+1 < Etag: W/"440-ZjsmMKR8P3usr2uJZbOCGCxC3Uw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1292
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 95c10c44d8467525-MIA
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=91872&min_rtt=80224&rtt_var=34286&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3106&recv_bytes=791&delivery_rate=35568&cwnd=252&unsent_bytes=0&cid=bb13f725bee7e879&ts=237&x=0"
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+11:44:44.975 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > GET https://reqres.in/api/users/7
+2 > X-Api-Key: reqres-free-v1
+2 > Host: reqres.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:44:44.991 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:44:45.001 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > X-Api-Key: reqres-free-v1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:44:45.145 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 731
+1 < 200
+1 < Date: Tue, 08 Jul 2025 16:44:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < CF-RAY: 95c10c44d970b7d3-MIA
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1751993083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veEyNDDHhxvJJs2aTyq0H2ddAsjkUAD5BGYKZRmP9xI%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751993083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veEyNDDHhxvJJs2aTyq0H2ddAsjkUAD5BGYKZRmP9xI%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Access-Control-Allow-Origin: *
+1 < X-Request-Id: 905fa77f-e65b-4a20-9247-fa4e5235cffa
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Ratelimit-Policy: 100;w=60
+1 < Ratelimit-Limit: 100
+1 < Ratelimit-Remaining: 98
+1 < Ratelimit-Reset: 60
+1 < Etag: W/"28-7LxIHXlNXX9BnY+3ZnumSOBkpHo"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=85764&min_rtt=80578&rtt_var=32163&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3105&recv_bytes=786&delivery_rate=35623&cwnd=253&unsent_bytes=0&cid=df9dfda83808a10b&ts=437&x=0"
+{"updatedAt":"2025-07-08T16:44:43.837Z"}
+
+11:44:45.157 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 743
+1 < 200
+1 < Date: Tue, 08 Jul 2025 16:44:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 29
+1 < Connection: keep-alive
+1 < CF-RAY: 95c10c450f62da23-MIA
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1751993083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veEyNDDHhxvJJs2aTyq0H2ddAsjkUAD5BGYKZRmP9xI%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751993083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veEyNDDHhxvJJs2aTyq0H2ddAsjkUAD5BGYKZRmP9xI%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Access-Control-Allow-Origin: *
+1 < X-Request-Id: 3509356d-5e7b-4a4d-9764-d53307195052
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Ratelimit-Policy: 100;w=60
+1 < Ratelimit-Limit: 100
+1 < Ratelimit-Remaining: 96
+1 < Ratelimit-Reset: 60
+1 < Etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+1 < Via: 1.1 vegur
+1 < cf-cache-status: DYNAMIC
+1 < Server: cloudflare
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=109821&min_rtt=106374&rtt_var=33500&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3107&recv_bytes=906&delivery_rate=35558&cwnd=252&unsent_bytes=0&cid=2f0b891139525fec&ts=422&x=0"
+{"token":"QpwL5tke4Pnpja7X4"}
+
+11:44:45.180 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 767
+1 < 400
+1 < Date: Tue, 08 Jul 2025 16:44:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 28
+1 < Connection: keep-alive
+1 < CF-RAY: 95c10c44db44a4c1-MIA
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1751993083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veEyNDDHhxvJJs2aTyq0H2ddAsjkUAD5BGYKZRmP9xI%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751993083&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=veEyNDDHhxvJJs2aTyq0H2ddAsjkUAD5BGYKZRmP9xI%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Access-Control-Allow-Origin: *
+1 < X-Request-Id: b204306b-bc6a-4ff8-9ab2-6b0b13ded561
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Ratelimit-Policy: 100;w=60
+1 < Ratelimit-Limit: 100
+1 < Ratelimit-Remaining: 94
+1 < Ratelimit-Reset: 60
+1 < Etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+1 < Via: 1.1 vegur
+1 < cf-cache-status: DYNAMIC
+1 < Server: cloudflare
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=91729&min_rtt=79530&rtt_var=34198&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3106&recv_bytes=876&delivery_rate=35884&cwnd=252&unsent_bytes=0&cid=7dd554ad92b96ccb&ts=469&x=0"
+{"error":"Missing password"}
+
+11:44:45.254 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 278
+2 < 200
+2 < Date: Tue, 08 Jul 2025 16:44:43 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1751990993&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JzrscphUTR5yw784fTxTgq8wjj3leti9WUDAT2LvD4Q%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751990993&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JzrscphUTR5yw784fTxTgq8wjj3leti9WUDAT2LvD4Q%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < Access-Control-Allow-Origin: *
+2 < X-Request-Id: dc83cb17-3cbb-4fdc-ae3f-77b5224349d7
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-Xss-Protection: 1; mode=block
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Ratelimit-Policy: 100;w=60
+2 < Ratelimit-Limit: 100
+2 < Ratelimit-Remaining: 95
+2 < Ratelimit-Reset: 27
+2 < Etag: W/"156-oMlgkyEs6eb1/fskSNkbJSKBTI8"
+2 < Via: 1.1 vegur
+2 < Age: 2090
+2 < Cache-Control: max-age=14400
+2 < cf-cache-status: HIT
+2 < Vary: Accept-Encoding
+2 < Server: cloudflare
+2 < CF-RAY: 95c10c46d9c78db8-MIA
+2 < server-timing: cfL4;desc="?proto=TCP&rtt=84430&min_rtt=81731&rtt_var=32577&sent=3&recv=5&lost=0&retrans=0&sent_bytes=187&recv_bytes=1195&delivery_rate=17129&cwnd=248&unsent_bytes=0&cid=e7dba17336383226&ts=103&x=0"
+{"data":{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},"support":{"url":"https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}}
+
+11:44:45.472 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 469
+1 < 204
+1 < Date: Tue, 08 Jul 2025 16:44:44 GMT
+1 < Connection: keep-alive
+1 < CF-RAY: 95c10c4719714f21-MIA
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1751993084&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lWDxHlXNSllmFTMDI8%2F6Y%2FYuVFr3W%2BnFjG7%2BzerSc9w%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751993084&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=lWDxHlXNSllmFTMDI8%2F6Y%2FYuVFr3W%2BnFjG7%2BzerSc9w%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Access-Control-Allow-Origin: *
+1 < X-Request-Id: f8bee109-9220-4639-a7da-43a95a70ee7b
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Ratelimit-Policy: 100;w=60
+1 < Ratelimit-Limit: 100
+1 < Ratelimit-Remaining: 92
+1 < Ratelimit-Reset: 60
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < cf-cache-status: DYNAMIC
+1 < Server: cloudflare
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=83475&min_rtt=81716&rtt_var=26088&sent=6&recv=7&lost=0&retrans=0&sent_bytes=3107&recv_bytes=789&delivery_rate=46670&cwnd=252&unsent_bytes=0&cid=5618bdc6e522805e&ts=301&x=0"
+
+
+---------------------------------------------------------
+feature: classpath:examples/get_resource/getResourceReqresIn.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9581
+---------------------------------------------------------
+
+11:44:45.521 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/get_resource/getResourceReqresIn.feature
+---------------------------------------------------------
+feature: classpath:examples/login/loginInReqresIn.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2,2924
+---------------------------------------------------------
+
+11:44:45.597 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/login/loginInReqresIn.feature
+---------------------------------------------------------
+feature: classpath:examples/users/usersReqresIn.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 2,8328
+---------------------------------------------------------
+
+11:44:45.689 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/users/usersReqresIn.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   3,39 | threads:    5 | thread time: 6,08 
+features:     3 | skipped:    0 | efficiency: 0,36
+scenarios:    6 | passed:     6 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///D:/portafolio/karate-demo/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

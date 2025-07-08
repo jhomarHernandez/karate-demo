@@ -1,0 +1,54 @@
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Directorios generados por Maven
+/target/
+
+# Logs
+*.log
+logs/
+*.trace
+
+# Archivos de configuración locales
+*.properties.local
+*.env
+.env
+.flaskenv
+
+# Archivos de IDE (IntelliJ IDEA, Eclipse, VS Code)
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# Dependencias del proyecto
+/node_modules/ # Si usas Node.js para algo (ej. reportería)
+
+# Archivos de caché
+.gradle/
+build/ # Para proyectos Gradle, aunque con Maven es /target/
+tmp/
+*.tmp
+
+# Archivos de reporte de Karate y Surefire (JUnit)
+/target/karate-reports/
+/target/surefire-reports/
+
+# Archivos compilados de Java
+*.class
+
+# Archivos de datos sensibles o de prueba
+*.csv
+*.xlsx
+*.secret
+*.key
+*.pem
+
+# Otros posibles archivos temporales
+*.swp
+*~
