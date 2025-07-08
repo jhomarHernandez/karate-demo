@@ -20,6 +20,12 @@
 
 `mvn clean test`
 
+o si desea una ejecución personalizada:
+
+`mvn clean test -Dkarate.options="--tags @Login"`
+
+Nota: @Login puede ser reemplazado por alguna de las etiquetas internas (ej: @Users, @GetResources, etc.)
+
 ## Resultados esperados
 
 * El reporte que se debería poder generar en `target/karate-reports/` serían:
