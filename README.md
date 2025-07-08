@@ -22,7 +22,7 @@
 
 o si desea una ejecución personalizada:
 
-`mvn clean test -Dkarate.options="--tags @Login"`
+`mvn clean test -Dkarate.options="--tags @ServerRest"`
 
 Nota: @Login puede ser reemplazado por alguna de las etiquetas internas (ej: @Users, @GetResources, etc.)
 
